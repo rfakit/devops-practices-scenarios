@@ -47,11 +47,11 @@
        - **Partition:** /deb/sda1 **SIZE:** 1G **MOUNTPOINT:** /boot/efi
        - **PV:** /deb/sda2 **VG:** vg_root **LV:** lv_root **SIZE:** 20G **MOUNTPOINT:** /
        - **PV:** /deb/sdb **VG:** vg_var **LV:** lv_var **SIZE:** 40G **MOUNTPOINT:** /var
-     - **Webservers:** 10.0.0.21 , 10.0.0.22
+     - **Webservers:**
        - **Partition:** /deb/sda1 **SIZE:** 1G **MOUNTPOINT:** /boot/efi
        - **PV:** /deb/sda2 **VG:** vg_root **LV:** lv_root **SIZE:** 20G **MOUNTPOINT:** /
        - **PV:** /deb/sdb **VG:** vg_var **LV:** lv_var **SIZE:** 40G **MOUNTPOINT:** /var
-     - **Backup:**  10.0.0.31
+     - **Backup:**
        - **Partition:** /deb/sda1 **SIZE:** 1G **MOUNTPOINT:** /boot/efi
        - **PV:** /deb/sda2 **VG:** vg_root **LV:** lv_root **SIZE:** 20G **MOUNTPOINT:** /
        - **PV:** /deb/sdb **VG:** vg_var **LV:** lv_var **SIZE:** 40G **MOUNTPOINT:** /var
@@ -81,9 +81,11 @@
 - **Log Rotation:** جلوگیری از پر شدن فضای دیسک  
 - **‌Backup Service:** یک اسکریپت بش که به صورت یک systemd سرویس به صورت دوره ای هر ۶ ساعت از `/var/www/html`  سرور بک آپ گرفته و به سرور بک آپ ارسال میکند
 (فایلها در سرور بک آپ باید در دایکتوری `/backup` و در فایلی با فورمت زیر نگه داری شود
-webbackup_HOSTNAME_DATEOFBACKUP.tar.gz
+`webbackup_HOSTNAME_DATEOFBACKUP.tar.gz`
+
 به عنوان مثال:
-/backup/webbackup_web-1_2025-01-01-12-00.tar.gz
+
+`/backup/webbackup_web-1_2025-01-01-12-00.tar.gz`
 
 ### **سرور بکاپ(Backupserver)**  
 - **حذف بک آپ های قدیمی** مکانیرمی ایجاد شود تا بک آپ های قدیمی تر از یک هفته از `/backup/` حذف گردد  
