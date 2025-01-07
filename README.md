@@ -17,6 +17,7 @@
 | 🚦 **سناریو** | 📄 **توضیح کوتاه** | 📁 **مسیر دایرکتوری** |
 |--------------|------------------|---------------------|
 | **Static Website with HAProxy Load Balancer** | پیاده‌سازی یک سایت استاتیک با Nginx و HAProxy همراه با SSL و Rate Limit | [مشاهده سناریو](scenarios/static-website-loadbalancer/README.md) |
+| **monitoring-infrastructure** | استقرار سیستم مانیتورینگ با Prometheus، Grafana و Node Exporter | [مشاهده سناریو](scenarios/monitoring-infrastructure/README.md) |
 
 
 ---
